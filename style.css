@@ -31,15 +31,47 @@ footer p {
 }
 .cartao__conteudo{
     text-align: center;
-    background-color: aquamarine;
+    background-color: var(--card-front-color);
     height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
 }
 ,.cartao__conteudo h3{
-    background-color: tomato;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
     position: 0.5rem;
     margin: 0.6rem;
     border-radius: 0.6rem;
     font-size: 1vw;
+    backface-visibility: hidden;
 }
+.cartao__conteudo h3 {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+.cartao__conteudo__pergunta p {
+    color: var(--text-color);
+    font-weight: 500;
+}
+.cartao__conteudo__pergunta p {
+    color: var(--card-back-color);
+    font-weight: 700;
+}
+.cartao:hover .cartao__conteudo {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
